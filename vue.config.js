@@ -47,8 +47,8 @@ module.exports = {
         publish: [
           {
             provider: 'github',
-            owner: 'rubickCenter',
-            repo: 'rubick',
+            owner: 'EvilJoker',  // 改为你的 GitHub 用户名
+            repo: 'rubick_appimage',      // 改为你的仓库名（如果不同）
           },
         ],
         // files: ["dist_electron/**/*"],
@@ -104,7 +104,7 @@ module.exports = {
         linux: {
           icon: 'public/icons/',
           publish: ['github'],
-          target: 'deb',
+          target: ['deb', 'AppImage'],
         },
       },
     },
